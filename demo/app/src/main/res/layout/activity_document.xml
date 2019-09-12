@@ -7,21 +7,33 @@
         android:layout_height="match_parent"
         android:background="@drawable/login_background"
         tools:context=".DocumentActivity">
-    <LinearLayout
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
+    <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_centerVertical="true">
 
-    <TextView
-            android:layout_gravity="center_vertical"
-            android:layout_width="match_parent"
-            android:text="hello docmument"
-            android:textSize="23dp"
+        <LinearLayout
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            android:textColor="@android:color/black"
-            android:layout_height="match_parent"/>
-    </LinearLayout>
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center_horizontal"/>
+
+        <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:text="hello docmument"
+                android:textSize="23dp"
+
+                android:textColor="@android:color/black"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

@@ -14,13 +14,14 @@ class LoginActivity : AppCompatActivity() {
 
         /// xu ly main
         xulyBtnLogIn()
-
+        xulyBtnSignUp()
+        xulyBtnForgotPassWord()
     }
     // onClick nut dang nhap
     fun xulyBtnLogIn(){
         btn_login.setOnClickListener{
             btn_login.setOnClickListener {
-                if(et_password.text.toString() == "1" && et_user.text.toString() == "admin"){
+                if(et_password.text.toString() == "1" && et_user.text.toString() == "1"){
                     val intent : Intent = Intent(this@LoginActivity, DocumentActivity::class.java)
                     startActivities(arrayOf(intent))
                 }
@@ -31,9 +32,15 @@ class LoginActivity : AppCompatActivity() {
     }
     // onClick nut dang ki
     fun xulyBtnSignUp(){
-        tv_signin.setOnClickListener{
-            val intent : Intent = Intent(this@LoginActivity, DocumentActivity::class.java)
-            startActivities(arrayOf(intent))
+        tv_signup.setOnClickListener{
+            Toast.makeText(this, "Tính năng này đang được phát trỉên", Toast.LENGTH_SHORT).show()
+
         }
+    }
+    fun xulyBtnForgotPassWord(){
+        tv_forgotpassword.setOnClickListener{
+            Toast.makeText(this, "Tính năng này đang được phát trỉên", Toast.LENGTH_SHORT).show()
+        }
+
     }
 }
